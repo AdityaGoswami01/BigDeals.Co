@@ -8,6 +8,15 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navbar = document.querySelector('.navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
+
 <body>
   <!-- Animated Display (Marquee Text) -->
   <div class="animated-display">
@@ -18,7 +27,7 @@
   <header class="header">
     <!-- Logo -->
     <div class="logo">
-      <a href="#"><img src="logo.png" alt="Brand Logo"></a>
+      <a href="#"><img src="Images/logo.png" alt="Brand Logo"></a>
     </div>
 
     <!-- Navigation Menu -->
